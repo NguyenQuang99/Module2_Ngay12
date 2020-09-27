@@ -7,5 +7,5 @@ public interface Iservice<P> {
     void delete();
     void showProduct();
     void searchProduct();
-    void sortProduct();
+    
 }

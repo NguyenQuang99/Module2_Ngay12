@@ -26,9 +26,7 @@ public class Main {
                 case 5:
                     productManager.searchProduct();
                     break;
-                case 6:
-                    productManager.sortProduct();
-                    break;
+                
             }
         } while (choice != 0);
     }

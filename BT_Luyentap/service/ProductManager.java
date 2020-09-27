@@ -19,7 +19,6 @@ public class ProductManager  {
         System.out.printf("3.Delete");
         System.out.printf("4.Show Product");
         System.out.printf("5.Search Product");
-        System.out.printf("6.Sort product");
         System.out.printf("0.Exit");
         System.out.printf("////////////////");
         System.out.printf("////////////////");
@@ -77,25 +76,7 @@ public class ProductManager  {
             System.out.println("Khong the ");
         }
     }
-    public void sortProduct() {
-        System.out.println("1.Price ↑ 2.Price ↓");
-        System.out.println("Choice : ");
-        int choise = scanner.nextInt();
-        switch (choise) {
-            case 1:
 
-                Collections.sort(productList, ((o1, o2) -> (o1.getPrice() - o2.getPrice())));
-                for (Product product : productList) {
-                    System.out.println(product);
-                }
-                break;
-            case 2:
-                Collections.sort(productList, (o1, o2) -> (o2.getPrice() - o1.getPrice()));
-                for (Product product     : productList) {
-                    System.out.println(product);
-                }
-                break;
-        }
 
     }
     public void editProduce() {
